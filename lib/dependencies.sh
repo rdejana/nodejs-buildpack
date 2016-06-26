@@ -1,6 +1,7 @@
 install_node_modules() {
   local build_dir=${1:-}
-
+   echo $LIBRARY_PATH
+    echo $LD_LIBRARY_PATH
   if [ -e $build_dir/package.json ]; then
     cd $build_dir
 
@@ -17,7 +18,8 @@ install_node_modules() {
 
 rebuild_node_modules() {
   local build_dir=${1:-}
-
+   echo $LIBRARY_PATH
+    echo $LD_LIBRARY_PATH
   if [ -e $build_dir/package.json ]; then
     cd $build_dir
     echo "Rebuilding any native modules"
