@@ -6,7 +6,7 @@ install_node_modules() {
     pwd
    echo $build_dir
    echo $BUILD_DIR
-   ls -li $build_dir/app/.apt/usr/lib/x86_64-linux-gnu/
+   ls -li $build_dir/.apt/usr/lib/x86_64-linux-gnu/
   if [ -e $build_dir/package.json ]; then
     cd $build_dir
 
